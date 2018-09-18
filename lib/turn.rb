@@ -31,10 +31,16 @@ def move(board, index, character = "X")
 end
 
 def turn(board, index)
-  while !valid_move?(board, index)
-  puts "Please enter 1-9:"
-end
+  input = get.strip
+  input_to_index(input)
+  if valid_move?(board, index)
+    do move
+  else 
+    puts "Please enter 1-9:"
+    until valid_move?(board, index)
+    end
+  end
 end
   
-
+#I know that turn only wants one argument: turn(board) but how can I use valid_move? (which takes two arguments) if that is the case?
   
