@@ -30,7 +30,7 @@ def move(board, index, character = "X")
   board[index] = character
 end
 
-def turn(board)
+def turn(board, index)
   input = gets.strip
   input_to_index(input)
   if valid_move?(board, index)
