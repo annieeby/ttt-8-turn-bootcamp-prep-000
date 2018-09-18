@@ -42,5 +42,3 @@ def turn(board)
   end
 end
   
-#I know that turn only wants one argument: turn(board) but how can I use valid_move? (which takes two arguments) if that is the case?
-  
