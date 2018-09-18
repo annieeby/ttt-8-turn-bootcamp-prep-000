@@ -33,7 +33,6 @@ end
 def turn(board)
   while !index.between?(0,8)
   puts "Please enter 1-9:"
-  input = gets.strip
 end
 end
   
