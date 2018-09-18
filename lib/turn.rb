@@ -30,7 +30,7 @@ def move(board, index, character = "X")
   board[index] = character
 end
 
-def turn(board,index)
+def turn(index)
   while !index.between?(0,8)
   puts "Please enter 1-9:"
 end
